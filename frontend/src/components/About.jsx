@@ -2,9 +2,14 @@ import React from 'react';
 import { Heart, Award, Shield } from 'lucide-react';
 import { Card, CardContent } from './ui/card';
 
-const iconMap = { Heart, Award, Shield };
-
 export const About = ({ data }) => {
+  const getIcon = (iconName) => {
+    if (iconName === 'Heart') return Heart;
+    if (iconName === 'Award') return Award;
+    if (iconName === 'Shield') return Shield;
+    return Heart;
+  };
+
   return (
     <section id="sobre" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -19,7 +24,7 @@ export const About = ({ data }) => {
 
         <div className="grid md:grid-cols-3 gap-8">
           {data.values.map((value, index) => {
-            const Icon = iconMap[value.icon];
+            const Icon = getIcon(value.icon);
             return (
               <Card key={index} className="border-2 hover:border-cyan-600 hover:shadow-lg transition-all">
                 <CardContent className="p-6 text-center space-y-4">

@@ -2,9 +2,14 @@ import React from 'react';
 import { Apple, Brain, Activity, Check } from 'lucide-react';
 import { Card, CardContent } from './ui/card';
 
-const iconMap = { Apple, Brain, Activity };
-
 export const Services = ({ data }) => {
+  const getIcon = (iconName) => {
+    if (iconName === 'Apple') return Apple;
+    if (iconName === 'Brain') return Brain;
+    if (iconName === 'Activity') return Activity;
+    return Apple;
+  };
+
   return (
     <section id="serviços" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -19,7 +24,7 @@ export const Services = ({ data }) => {
 
         <div className="grid md:grid-cols-3 gap-8">
           {data.map((service) => {
-            const Icon = iconMap[service.icon];
+            const Icon = getIcon(service.icon);
             return (
               <Card key={service.id} className="overflow-hidden hover:shadow-xl transition-shadow">
                 <div className="h-48 overflow-hidden">

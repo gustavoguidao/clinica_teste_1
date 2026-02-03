@@ -1,9 +1,15 @@
 import React from 'react';
 import { Users, Clock, MapPin, Stethoscope } from 'lucide-react';
 
-const iconMap = { Users, Clock, MapPin, Stethoscope };
-
 export const Differentials = ({ data }) => {
+  const getIcon = (iconName) => {
+    if (iconName === 'Users') return Users;
+    if (iconName === 'Clock') return Clock;
+    if (iconName === 'MapPin') return MapPin;
+    if (iconName === 'Stethoscope') return Stethoscope;
+    return Users;
+  };
+
   return (
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -18,7 +24,7 @@ export const Differentials = ({ data }) => {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {data.map((diff, index) => {
-            const Icon = iconMap[diff.icon];
+            const Icon = getIcon(diff.icon);
             return (
               <div 
                 key={index}
