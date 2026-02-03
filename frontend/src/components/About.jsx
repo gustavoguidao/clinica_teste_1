@@ -3,13 +3,6 @@ import { Heart, Award, Shield } from 'lucide-react';
 import { Card, CardContent } from './ui/card';
 
 export const About = ({ data }) => {
-  const getIcon = (iconName) => {
-    if (iconName === 'Heart') return Heart;
-    if (iconName === 'Award') return Award;
-    if (iconName === 'Shield') return Shield;
-    return Heart;
-  };
-
   return (
     <section id="sobre" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -23,20 +16,38 @@ export const About = ({ data }) => {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
-          {data.values.map((value, index) => {
-            const Icon = getIcon(value.icon);
-            return (
-              <Card key={index} className="border-2 hover:border-cyan-600 hover:shadow-lg transition-all">
-                <CardContent className="p-6 text-center space-y-4">
-                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-cyan-100">
-                    <Icon className="h-8 w-8 text-cyan-600" />
-                  </div>
-                  <h3 className="text-xl font-bold text-gray-900">{value.title}</h3>
-                  <p className="text-gray-600">{value.description}</p>
-                </CardContent>
-              </Card>
-            );
-          })}
+          {/* Humanização */}
+          <Card className="border-2 hover:border-cyan-600 hover:shadow-lg transition-all">
+            <CardContent className="p-6 text-center space-y-4">
+              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-cyan-100">
+                <Heart className="h-8 w-8 text-cyan-600" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900">{data.values[0].title}</h3>
+              <p className="text-gray-600">{data.values[0].description}</p>
+            </CardContent>
+          </Card>
+
+          {/* Excelência */}
+          <Card className="border-2 hover:border-cyan-600 hover:shadow-lg transition-all">
+            <CardContent className="p-6 text-center space-y-4">
+              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-cyan-100">
+                <Award className="h-8 w-8 text-cyan-600" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900">{data.values[1].title}</h3>
+              <p className="text-gray-600">{data.values[1].description}</p>
+            </CardContent>
+          </Card>
+
+          {/* Confiança */}
+          <Card className="border-2 hover:border-cyan-600 hover:shadow-lg transition-all">
+            <CardContent className="p-6 text-center space-y-4">
+              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-cyan-100">
+                <Shield className="h-8 w-8 text-cyan-600" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900">{data.values[2].title}</h3>
+              <p className="text-gray-600">{data.values[2].description}</p>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </section>
