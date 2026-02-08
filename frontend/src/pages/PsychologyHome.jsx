@@ -40,7 +40,7 @@ export const PsychologyHome = () => {
                   className="bg-gradient-to-r from-rose-400 to-purple-400 hover:from-rose-500 hover:to-purple-500 text-white btn-premium rounded-full px-8 py-6 text-lg"
                 >
                   <Calendar className="mr-2 h-5 w-5" />
-                  Agendar Primeira Sessão
+                  Book First Session
                 </Button>
                 <Button 
                   size="lg"
