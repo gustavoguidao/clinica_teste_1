@@ -9,6 +9,9 @@ import { Sparkles, Heart, Brain, User, ArrowRight, Star, Calendar } from 'lucide
 
 export const PsychologyHome = () => {
   const navigate = useNavigate();
+  const spec = psychologistData.specialties;
+  const serv = psychologistData.services;
+  const test = psychologistData.testimonials;
 
   return (
     <div className="min-h-screen">
@@ -78,24 +81,45 @@ export const PsychologyHome = () => {
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {psychologistData.specialties.map((specialty, index) => {
-              const icons = { Brain, Heart, Sparkles, User };
-              const Icon = icons[specialty.icon] || Brain;
-              const colors = ['rose', 'purple', 'peach', 'lavender'];
-              const color = colors[index % 4];
-              
-              return (
-                <Card key={index} className="border-2 hover:border-rose-200 hover:shadow-soft-lg transition-all group">
-                  <CardContent className="p-6 text-center space-y-4">
-                    <div className={`w-16 h-16 mx-auto rounded-full bg-gradient-to-br from-${color}-100 to-${color}-200 flex items-center justify-center group-hover:scale-110 transition-transform`}>
-                      <Icon className={`h-8 w-8 text-${color}-500`} />
-                    </div>
-                    <h3 className="font-serif text-xl font-semibold text-gray-800">{specialty.name}</h3>
-                    <p className="text-gray-600 text-sm">{specialty.description}</p>
-                  </CardContent>
-                </Card>
-              );
-            })}
+            <Card className="border-2 hover:border-rose-200 hover:shadow-soft-lg transition-all group">
+              <CardContent className="p-6 text-center space-y-4">
+                <div className="w-16 h-16 mx-auto rounded-full bg-gradient-to-br from-rose-100 to-rose-200 flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <Brain className="h-8 w-8 text-rose-500" />
+                </div>
+                <h3 className="font-serif text-xl font-semibold text-gray-800">{spec[0].name}</h3>
+                <p className="text-gray-600 text-sm">{spec[0].description}</p>
+              </CardContent>
+            </Card>
+            
+            <Card className="border-2 hover:border-rose-200 hover:shadow-soft-lg transition-all group">
+              <CardContent className="p-6 text-center space-y-4">
+                <div className="w-16 h-16 mx-auto rounded-full bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <Heart className="h-8 w-8 text-purple-500" />
+                </div>
+                <h3 className="font-serif text-xl font-semibold text-gray-800">{spec[1].name}</h3>
+                <p className="text-gray-600 text-sm">{spec[1].description}</p>
+              </CardContent>
+            </Card>
+            
+            <Card className="border-2 hover:border-rose-200 hover:shadow-soft-lg transition-all group">
+              <CardContent className="p-6 text-center space-y-4">
+                <div className="w-16 h-16 mx-auto rounded-full bg-gradient-to-br from-peach-100 to-peach-200 flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <Sparkles className="h-8 w-8 text-amber-500" />
+                </div>
+                <h3 className="font-serif text-xl font-semibold text-gray-800">{spec[2].name}</h3>
+                <p className="text-gray-600 text-sm">{spec[2].description}</p>
+              </CardContent>
+            </Card>
+            
+            <Card className="border-2 hover:border-rose-200 hover:shadow-soft-lg transition-all group">
+              <CardContent className="p-6 text-center space-y-4">
+                <div className="w-16 h-16 mx-auto rounded-full bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <User className="h-8 w-8 text-purple-500" />
+                </div>
+                <h3 className="font-serif text-xl font-semibold text-gray-800">{spec[3].name}</h3>
+                <p className="text-gray-600 text-sm">{spec[3].description}</p>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
@@ -113,29 +137,93 @@ export const PsychologyHome = () => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            {psychologistData.services.slice(0, 4).map((service) => (
-              <Card key={service.id} className="hover:shadow-soft-lg transition-all">
-                <CardContent className="p-8">
-                  <div className="flex items-start space-x-4">
-                    <div className={`w-14 h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-${service.color}-100 to-${service.color}-200 flex items-center justify-center`}>
-                      <Heart className={`h-7 w-7 text-${service.color}-500`} />
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="font-serif text-2xl font-semibold text-gray-800 mb-2">{service.name}</h3>
-                      <p className="text-sm text-gray-500 mb-3">{service.duration}</p>
-                      <p className="text-gray-600 mb-4">{service.description}</p>
-                      <Button 
-                        variant="ghost" 
-                        className="text-rose-500 hover:text-rose-600 p-0"
-                        onClick={() => navigate('/servicos')}
-                      >
-                        Saiba mais <ArrowRight className="ml-2 h-4 w-4" />
-                      </Button>
-                    </div>
+            <Card className="hover:shadow-soft-lg transition-all">
+              <CardContent className="p-8">
+                <div className="flex items-start space-x-4">
+                  <div className="w-14 h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-rose-100 to-rose-200 flex items-center justify-center">
+                    <Heart className="h-7 w-7 text-rose-500" />
                   </div>
-                </CardContent>
-              </Card>
-            ))}
+                  <div className="flex-1">
+                    <h3 className="font-serif text-2xl font-semibold text-gray-800 mb-2">{serv[0].name}</h3>
+                    <p className="text-sm text-gray-500 mb-3">{serv[0].duration}</p>
+                    <p className="text-gray-600 mb-4">{serv[0].description}</p>
+                    <Button 
+                      variant="ghost" 
+                      className="text-rose-500 hover:text-rose-600 p-0"
+                      onClick={() => navigate('/servicos')}
+                    >
+                      Saiba mais <ArrowRight className="ml-2 h-4 w-4" />
+                    </Button>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+            
+            <Card className="hover:shadow-soft-lg transition-all">
+              <CardContent className="p-8">
+                <div className="flex items-start space-x-4">
+                  <div className="w-14 h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center">
+                    <Heart className="h-7 w-7 text-purple-500" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="font-serif text-2xl font-semibold text-gray-800 mb-2">{serv[1].name}</h3>
+                    <p className="text-sm text-gray-500 mb-3">{serv[1].duration}</p>
+                    <p className="text-gray-600 mb-4">{serv[1].description}</p>
+                    <Button 
+                      variant="ghost" 
+                      className="text-rose-500 hover:text-rose-600 p-0"
+                      onClick={() => navigate('/servicos')}
+                    >
+                      Saiba mais <ArrowRight className="ml-2 h-4 w-4" />
+                    </Button>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+            
+            <Card className="hover:shadow-soft-lg transition-all">
+              <CardContent className="p-8">
+                <div className="flex items-start space-x-4">
+                  <div className="w-14 h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-amber-100 to-amber-200 flex items-center justify-center">
+                    <Heart className="h-7 w-7 text-amber-500" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="font-serif text-2xl font-semibold text-gray-800 mb-2">{serv[2].name}</h3>
+                    <p className="text-sm text-gray-500 mb-3">{serv[2].duration}</p>
+                    <p className="text-gray-600 mb-4">{serv[2].description}</p>
+                    <Button 
+                      variant="ghost" 
+                      className="text-rose-500 hover:text-rose-600 p-0"
+                      onClick={() => navigate('/servicos')}
+                    >
+                      Saiba mais <ArrowRight className="ml-2 h-4 w-4" />
+                    </Button>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+            
+            <Card className="hover:shadow-soft-lg transition-all">
+              <CardContent className="p-8">
+                <div className="flex items-start space-x-4">
+                  <div className="w-14 h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center">
+                    <Heart className="h-7 w-7 text-purple-500" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="font-serif text-2xl font-semibold text-gray-800 mb-2">{serv[3].name}</h3>
+                    <p className="text-sm text-gray-500 mb-3">{serv[3].duration}</p>
+                    <p className="text-gray-600 mb-4">{serv[3].description}</p>
+                    <Button 
+                      variant="ghost" 
+                      className="text-rose-500 hover:text-rose-600 p-0"
+                      onClick={() => navigate('/servicos')}
+                    >
+                      Saiba mais <ArrowRight className="ml-2 h-4 w-4" />
+                    </Button>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
 
           <div className="text-center mt-12">
@@ -164,28 +252,62 @@ export const PsychologyHome = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {psychologistData.testimonials.map((testimonial) => (
-              <Card key={testimonial.id} className="bg-white hover:shadow-soft-lg transition-all">
-                <CardContent className="p-8 space-y-4">
-                  <div className="flex space-x-1">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="h-5 w-5 fill-rose-400 text-rose-400" />
-                    ))}
-                  </div>
-                  <p className="text-gray-700 italic leading-relaxed">"{testimonial.comment}"</p>
-                  <div className="pt-4 border-t border-rose-100">
-                    <p className="font-semibold text-gray-800">{testimonial.name}</p>
-                    <p className="text-sm text-gray-500">{testimonial.age} • {testimonial.service}</p>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+            <Card className="bg-white hover:shadow-soft-lg transition-all">
+              <CardContent className="p-8 space-y-4">
+                <div className="flex space-x-1">
+                  <Star className="h-5 w-5 fill-rose-400 text-rose-400" />
+                  <Star className="h-5 w-5 fill-rose-400 text-rose-400" />
+                  <Star className="h-5 w-5 fill-rose-400 text-rose-400" />
+                  <Star className="h-5 w-5 fill-rose-400 text-rose-400" />
+                  <Star className="h-5 w-5 fill-rose-400 text-rose-400" />
+                </div>
+                <p className="text-gray-700 italic leading-relaxed">"{test[0].comment}"</p>
+                <div className="pt-4 border-t border-rose-100">
+                  <p className="font-semibold text-gray-800">{test[0].name}</p>
+                  <p className="text-sm text-gray-500">{test[0].age} • {test[0].service}</p>
+                </div>
+              </CardContent>
+            </Card>
+            
+            <Card className="bg-white hover:shadow-soft-lg transition-all">
+              <CardContent className="p-8 space-y-4">
+                <div className="flex space-x-1">
+                  <Star className="h-5 w-5 fill-rose-400 text-rose-400" />
+                  <Star className="h-5 w-5 fill-rose-400 text-rose-400" />
+                  <Star className="h-5 w-5 fill-rose-400 text-rose-400" />
+                  <Star className="h-5 w-5 fill-rose-400 text-rose-400" />
+                  <Star className="h-5 w-5 fill-rose-400 text-rose-400" />
+                </div>
+                <p className="text-gray-700 italic leading-relaxed">"{test[1].comment}"</p>
+                <div className="pt-4 border-t border-rose-100">
+                  <p className="font-semibold text-gray-800">{test[1].name}</p>
+                  <p className="text-sm text-gray-500">{test[1].age} • {test[1].service}</p>
+                </div>
+              </CardContent>
+            </Card>
+            
+            <Card className="bg-white hover:shadow-soft-lg transition-all">
+              <CardContent className="p-8 space-y-4">
+                <div className="flex space-x-1">
+                  <Star className="h-5 w-5 fill-rose-400 text-rose-400" />
+                  <Star className="h-5 w-5 fill-rose-400 text-rose-400" />
+                  <Star className="h-5 w-5 fill-rose-400 text-rose-400" />
+                  <Star className="h-5 w-5 fill-rose-400 text-rose-400" />
+                  <Star className="h-5 w-5 fill-rose-400 text-rose-400" />
+                </div>
+                <p className="text-gray-700 italic leading-relaxed">"{test[2].comment}"</p>
+                <div className="pt-4 border-t border-rose-100">
+                  <p className="font-semibold text-gray-800">{test[2].name}</p>
+                  <p className="text-sm text-gray-500">{test[2].age} • {test[2].service}</p>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
 
       {/* CTA */}
-      <section className="py-20 px-4 bg-gradient-to-r from-rose-400 via-purple-400 to-peach-400">
+      <section className="py-20 px-4 bg-gradient-to-r from-rose-400 via-purple-400 to-amber-400">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="font-serif text-4xl lg:text-5xl font-bold text-white mb-6">
             {psychologistData.cta.title}
