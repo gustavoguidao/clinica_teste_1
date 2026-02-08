@@ -8,11 +8,11 @@ export const PremiumHeader = () => {
   const navigate = useNavigate();
 
   const navItems = [
-    { name: 'Início', path: '/' },
-    { name: 'Sobre Mim', path: '/sobre' },
-    { name: 'Serviços', path: '/servicos' },
+    { name: 'Home', path: '/' },
+    { name: 'About Me', path: '/sobre' },
+    { name: 'Services', path: '/servicos' },
     { name: 'Blog', path: '/blog' },
-    { name: 'Contato', path: '/contato' }
+    { name: 'Contact', path: '/contato' }
   ];
 
   return (
@@ -25,8 +25,8 @@ export const PremiumHeader = () => {
               <Heart className="h-6 w-6 text-rose-500" />
             </div>
             <div>
-              <p className="font-serif text-xl font-semibold text-gray-800">Dra. Sofia Almeida</p>
-              <p className="text-xs text-gray-600">Psicóloga Clínica</p>
+              <p className="font-serif text-xl font-semibold text-gray-800">Dr. Sofia Almeida</p>
+              <p className="text-xs text-gray-600">Clinical Psychologist</p>
             </div>
           </Link>
 
@@ -45,7 +45,7 @@ export const PremiumHeader = () => {
               onClick={() => navigate('/contato')}
               className="ml-4 bg-gradient-to-r from-rose-400 to-purple-400 hover:from-rose-500 hover:to-purple-500 text-white btn-premium rounded-full px-6"
             >
-              Agendar Consulta
+              Book Appointment
             </Button>
           </nav>
 
@@ -82,7 +82,7 @@ export const PremiumHeader = () => {
               }}
               className="w-full bg-gradient-to-r from-rose-400 to-purple-400 text-white rounded-full"
             >
-              Agendar Consulta
+              Book Appointment
             </Button>
           </nav>
         )}

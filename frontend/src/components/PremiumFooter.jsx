@@ -27,19 +27,19 @@ export const PremiumFooter = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-serif text-lg font-semibold text-gray-800 mb-4">Links Rápidos</h3>
+            <h3 className="font-serif text-lg font-semibold text-gray-800 mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li><Link to="/" className="text-gray-600 hover:text-rose-500 transition-colors">Início</Link></li>
-              <li><Link to="/sobre" className="text-gray-600 hover:text-rose-500 transition-colors">Sobre Mim</Link></li>
-              <li><Link to="/servicos" className="text-gray-600 hover:text-rose-500 transition-colors">Serviços</Link></li>
+              <li><Link to="/" className="text-gray-600 hover:text-rose-500 transition-colors">Home</Link></li>
+              <li><Link to="/sobre" className="text-gray-600 hover:text-rose-500 transition-colors">About Me</Link></li>
+              <li><Link to="/servicos" className="text-gray-600 hover:text-rose-500 transition-colors">Services</Link></li>
               <li><Link to="/blog" className="text-gray-600 hover:text-rose-500 transition-colors">Blog</Link></li>
-              <li><Link to="/contato" className="text-gray-600 hover:text-rose-500 transition-colors">Contato</Link></li>
+              <li><Link to="/contato" className="text-gray-600 hover:text-rose-500 transition-colors">Contact</Link></li>
             </ul>
           </div>
 
           {/* Contact */}
           <div>
-            <h3 className="font-serif text-lg font-semibold text-gray-800 mb-4">Contato</h3>
+            <h3 className="font-serif text-lg font-semibold text-gray-800 mb-4">Contact</h3>
             <ul className="space-y-3">
               <li className="flex items-center space-x-3 text-gray-600">
                 <Phone className="h-4 w-4 text-rose-400" />
@@ -71,17 +71,17 @@ export const PremiumFooter = () => {
         <div className="border-t border-rose-200 pt-8 mt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-sm text-gray-600">
-              © 2024 {psychologistData.name}. Todos os direitos reservados.
+              © 2024 {psychologistData.name}. All rights reserved.
             </p>
             <div className="flex space-x-6 text-sm">
               <Link to="/privacidade" className="text-gray-600 hover:text-rose-500 transition-colors">
-                Privacidade
+                Privacy
               </Link>
               <Link to="/termos" className="text-gray-600 hover:text-rose-500 transition-colors">
-                Termos
+                Terms
               </Link>
               <Link to="/aviso-legal" className="text-gray-600 hover:text-rose-500 transition-colors">
-                Aviso Legal
+                Disclaimer
               </Link>
             </div>
           </div>

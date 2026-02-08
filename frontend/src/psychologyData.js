@@ -1,88 +1,88 @@
-// Mock data for Dra. Sofia Almeida - Clinical Psychology Practice
+// English version - Dr. Sofia Almeida - Clinical Psychology Practice
 
 export const psychologistData = {
-  name: "Dra. Sofia Almeida",
-  title: "Psicóloga Clínica",
-  crp: "CRP 06/123456",
-  tagline: "Um espaço acolhedor para cuidar da sua saúde mental",
-  phone: "(11) 98765-4321",
-  email: "contato@sofiaalmeida.psi.br",
-  whatsapp: "5511987654321",
-  location: "São Paulo, SP",
-  address: "Consultório localizado na Av. Paulista - atendimento presencial e online",
+  name: "Dr. Sofia Almeida",
+  title: "Clinical Psychologist",
+  crp: "License #06/123456",
+  tagline: "A welcoming space to care for your mental health",
+  phone: "+1 (555) 123-4567",
+  email: "contact@sofiaalmeida.com",
+  whatsapp: "15551234567",
+  location: "San Francisco, CA",
+  address: "Office located in Downtown - in-person and online sessions available",
   
   about: {
-    intro: "Olá, sou a Dra. Sofia Almeida, psicóloga clínica com mais de 10 anos de experiência no cuidado da saúde mental. Meu objetivo é criar um espaço seguro e acolhedor onde você possa se sentir à vontade para falar sobre seus desafios e descobrir novas formas de lidar com eles.",
-    approach: "Utilizo a abordagem da Terapia Cognitivo-Comportamental (TCC), que é cientificamente comprovada e focada em soluções práticas para os desafios do dia a dia. Acredito que cada pessoa é única, por isso adapto o tratamento às suas necessidades específicas.",
-    quote: "A terapia é uma jornada de autoconhecimento e crescimento. Estou aqui para caminhar ao seu lado.",
+    intro: "Hello, I'm Dr. Sofia Almeida, a clinical psychologist with over 10 years of experience in mental health care. My goal is to create a safe and welcoming space where you can feel comfortable discussing your challenges and discovering new ways to cope with them.",
+    approach: "I use Cognitive Behavioral Therapy (CBT), which is scientifically proven and focused on practical solutions for everyday challenges. I believe each person is unique, so I adapt the treatment to your specific needs.",
+    quote: "Therapy is a journey of self-discovery and growth. I'm here to walk alongside you.",
     education: [
-      "Graduação em Psicologia - USP",
-      "Especialização em TCC - Instituto de Terapia Cognitiva",
-      "Mestrado em Psicologia Clínica - PUC-SP",
-      "Formação em Terapia de Esquemas"
+      "Bachelor's Degree in Psychology - Stanford University",
+      "Specialization in CBT - Beck Institute",
+      "Master's in Clinical Psychology - UCLA",
+      "Schema Therapy Training"
     ],
     experience: [
-      "10+ anos de experiência clínica",
-      "Atendimento de adultos e adolescentes",
-      "Supervisora clínica de psicólogos",
-      "Palestrante em eventos de saúde mental"
+      "10+ years of clinical experience",
+      "Adult and adolescent therapy",
+      "Clinical supervisor for psychologists",
+      "Speaker at mental health events"
     ]
   },
 
   services: [
     {
       id: 1,
-      name: "Terapia Individual",
+      name: "Individual Therapy",
       icon: "User",
-      duration: "50 minutos",
-      description: "Sessões personalizadas para trabalhar ansiedade, depressão, autoestima e outros desafios emocionais.",
+      duration: "50 minutes",
+      description: "Personalized sessions to work through anxiety, depression, self-esteem, and other emotional challenges.",
       details: [
-        "Atendimento adulto e adolescente",
-        "Abordagem TCC",
-        "Sessões semanais ou quinzenais",
-        "Presencial ou online"
+        "Adult and adolescent care",
+        "CBT approach",
+        "Weekly or biweekly sessions",
+        "In-person or online"
       ],
       color: "rose"
     },
     {
       id: 2,
-      name: "Terapia para Ansiedade",
+      name: "Anxiety Therapy",
       icon: "Heart",
-      duration: "50 minutos",
-      description: "Tratamento especializado para transtornos de ansiedade, pânico e fobias.",
+      duration: "50 minutes",
+      description: "Specialized treatment for anxiety disorders, panic attacks, and phobias.",
       details: [
-        "Técnicas de relaxamento",
-        "Reestruturação cognitiva",
-        "Exposição gradual",
-        "Estratégias de enfrentamento"
+        "Relaxation techniques",
+        "Cognitive restructuring",
+        "Gradual exposure",
+        "Coping strategies"
       ],
       color: "purple"
     },
     {
       id: 3,
-      name: "Orientação Profissional",
+      name: "Career Counseling",
       icon: "Briefcase",
-      duration: "50 minutos",
-      description: "Apoio psicológico para questões de carreira, burnout e transições profissionais.",
+      duration: "50 minutes",
+      description: "Psychological support for career issues, burnout, and professional transitions.",
       details: [
-        "Análise de perfil profissional",
-        "Gestão de estresse no trabalho",
-        "Tomada de decisões de carreira",
-        "Prevenção de burnout"
+        "Professional profile analysis",
+        "Workplace stress management",
+        "Career decision-making",
+        "Burnout prevention"
       ],
       color: "peach"
     },
     {
       id: 4,
-      name: "Atendimento Online",
+      name: "Online Sessions",
       icon: "Video",
-      duration: "50 minutos",
-      description: "Terapia por videochamada com a mesma qualidade do atendimento presencial.",
+      duration: "50 minutes",
+      description: "Therapy via video call with the same quality as in-person sessions.",
       details: [
-        "Plataforma segura e privada",
-        "Horários flexíveis",
-        "Conforto da sua casa",
-        "Mesma eficácia terapêutica"
+        "Secure and private platform",
+        "Flexible scheduling",
+        "Comfort of your home",
+        "Same therapeutic effectiveness"
       ],
       color: "lavender"
     }
@@ -90,23 +90,23 @@ export const psychologistData = {
 
   specialties: [
     {
-      name: "Ansiedade",
-      description: "Tratamento de transtornos de ansiedade generalizada, pânico e fobias",
+      name: "Anxiety",
+      description: "Treatment for generalized anxiety disorder, panic attacks, and phobias",
       icon: "Brain"
     },
     {
-      name: "Depressão",
-      description: "Apoio no tratamento de sintomas depressivos e recuperação emocional",
+      name: "Depression",
+      description: "Support in treating depressive symptoms and emotional recovery",
       icon: "Heart"
     },
     {
-      name: "Autoestima",
-      description: "Desenvolvimento de autoconfiança e aceitação pessoal",
+      name: "Self-Esteem",
+      description: "Development of self-confidence and self-acceptance",
       icon: "Sparkles"
     },
     {
-      name: "Relacionamentos",
-      description: "Orientação para melhorar vínculos afetivos e sociais",
+      name: "Relationships",
+      description: "Guidance to improve emotional and social bonds",
       icon: "Users"
     }
   ],
@@ -114,63 +114,63 @@ export const psychologistData = {
   testimonials: [
     {
       id: 1,
-      name: "Ana Paula",
-      age: "32 anos",
-      comment: "A Dra. Sofia me ajudou a superar minha ansiedade de forma acolhedora e profissional. Sinto que finalmente tenho ferramentas para lidar com meus desafios.",
+      name: "Anna P.",
+      age: "32 years old",
+      comment: "Dr. Sofia helped me overcome my anxiety in a welcoming and professional way. I finally have tools to deal with my challenges.",
       rating: 5,
-      service: "Terapia para Ansiedade"
+      service: "Anxiety Therapy"
     },
     {
       id: 2,
-      name: "Ricardo M.",
-      age: "28 anos",
-      comment: "Comecei a terapia em um momento difícil e a Dra. Sofia foi essencial na minha recuperação. Ambiente acolhedor e tratamento eficaz.",
+      name: "Richard M.",
+      age: "28 years old",
+      comment: "I started therapy at a difficult time and Dr. Sofia was essential in my recovery. Welcoming environment and effective treatment.",
       rating: 5,
-      service: "Terapia Individual"
+      service: "Individual Therapy"
     },
     {
       id: 3,
-      name: "Juliana Santos",
-      age: "35 anos",
-      comment: "Profissional excepcional! Me ajudou a entender melhor minhas emoções e a desenvolver autoestima. Recomendo muito!",
+      name: "Julia Santos",
+      age: "35 years old",
+      comment: "Exceptional professional! Helped me better understand my emotions and develop self-esteem. Highly recommend!",
       rating: 5,
-      service: "Autoestima"
+      service: "Self-Esteem"
     }
   ],
 
   faqs: [
     {
-      question: "Como funciona a primeira sessão?",
-      answer: "Na primeira sessão, vamos conversar sobre o que te trouxe até aqui, seus objetivos para a terapia e como posso ajudar. É um momento de conhecer meu trabalho e tirar suas dúvidas."
+      question: "How does the first session work?",
+      answer: "In the first session, we'll talk about what brought you here, your goals for therapy, and how I can help. It's a time to get to know my work and ask questions."
     },
     {
-      question: "Quanto tempo dura o tratamento?",
-      answer: "A duração varia de acordo com cada pessoa e seus objetivos. Alguns casos podem ter melhora significativa em 3-6 meses, enquanto outros podem se beneficiar de acompanhamento mais longo. Avaliaremos juntos o progresso regularmente."
+      question: "How long does treatment last?",
+      answer: "Duration varies according to each person and their goals. Some cases may show significant improvement in 3-6 months, while others may benefit from longer-term care. We'll regularly assess progress together."
     },
     {
-      question: "Você atende por convênio?",
-      answer: "Atualmente trabalho apenas com atendimento particular. Forneço recibos que podem ser utilizados para reembolso em alguns planos de saúde."
+      question: "Do you accept insurance?",
+      answer: "Currently I work on a private pay basis only. I provide receipts that can be used for reimbursement with some insurance plans."
     },
     {
-      question: "Como funciona o atendimento online?",
-      answer: "O atendimento online acontece por videochamada em plataforma segura e privada. Tem a mesma duração e eficácia do presencial, com a comodidade de você estar onde preferir."
+      question: "How do online sessions work?",
+      answer: "Online sessions happen via video call on a secure and private platform. They have the same duration and effectiveness as in-person sessions, with the convenience of being wherever you prefer."
     },
     {
-      question: "Posso cancelar ou remarcar sessões?",
-      answer: "Sim! Peço apenas que avise com pelo menos 24 horas de antecedência para que possamos remarcar sem custos adicionais."
+      question: "Can I cancel or reschedule sessions?",
+      answer: "Yes! I just ask that you notify me at least 24 hours in advance so we can reschedule at no additional cost."
     }
   ],
 
   cta: {
-    title: "Pronta para dar o primeiro passo?",
-    subtitle: "Agende sua primeira sessão e comece sua jornada de autoconhecimento e bem-estar",
-    button: "Agendar Consulta"
+    title: "Ready to take the first step?",
+    subtitle: "Schedule your first session and begin your journey of self-discovery and wellness",
+    button: "Book Appointment"
   },
 
   socialMedia: {
-    instagram: "@dra.sofiaalmeida.psi",
-    linkedin: "sofia-almeida-psicologa",
-    facebook: "drasofiaalmeida"
+    instagram: "@dr.sofiaalmeida.psy",
+    linkedin: "sofia-almeida-psychologist",
+    facebook: "drsofiaalmeida"
   }
 };
 
@@ -178,106 +178,106 @@ export const psychologistData = {
 export const blogPosts = [
   {
     id: 1,
-    title: "5 Sinais de que Você Pode se Beneficiar da Terapia",
-    slug: "5-sinais-terapia",
-    excerpt: "Descubra como identificar quando é hora de buscar apoio psicológico profissional para cuidar da sua saúde mental.",
-    content: "Muitas pessoas se perguntam quando é o momento certo para buscar terapia...",
-    category: "Saúde Mental",
+    title: "5 Signs You Could Benefit from Therapy",
+    slug: "5-signs-therapy",
+    excerpt: "Discover how to identify when it's time to seek professional psychological support for your mental health.",
+    content: "Many people wonder when the right time is to seek therapy...",
+    category: "Mental Health",
     date: "2024-01-15",
     readTime: "5 min",
     image: "https://images.unsplash.com/photo-1573497491208-6b1acb260507?w=800",
-    author: "Dra. Sofia Almeida"
+    author: "Dr. Sofia Almeida"
   },
   {
     id: 2,
-    title: "Ansiedade: Como Reconhecer e Lidar com os Sintomas",
-    slug: "ansiedade-sintomas",
-    excerpt: "Entenda melhor a ansiedade e aprenda técnicas práticas para gerenciar seus sintomas no dia a dia.",
-    content: "A ansiedade é uma das queixas mais comuns nos consultórios de psicologia...",
-    category: "Ansiedade",
+    title: "Anxiety: How to Recognize and Manage Symptoms",
+    slug: "anxiety-symptoms",
+    excerpt: "Better understand anxiety and learn practical techniques to manage your symptoms daily.",
+    content: "Anxiety is one of the most common complaints in psychology offices...",
+    category: "Anxiety",
     date: "2024-01-10",
     readTime: "7 min",
     image: "https://images.unsplash.com/photo-1499209974431-9dddcece7f88?w=800",
-    author: "Dra. Sofia Almeida"
+    author: "Dr. Sofia Almeida"
   },
   {
     id: 3,
-    title: "A Importância do Autocuidado para a Saúde Mental",
-    slug: "autocuidado-saude-mental",
-    excerpt: "Descubra práticas simples de autocuidado que podem fazer grande diferença no seu bem-estar emocional.",
-    content: "O autocuidado vai muito além de cuidados físicos...",
-    category: "Bem-estar",
+    title: "The Importance of Self-Care for Mental Health",
+    slug: "self-care-mental-health",
+    excerpt: "Discover simple self-care practices that can make a big difference in your emotional well-being.",
+    content: "Self-care goes far beyond physical care...",
+    category: "Wellness",
     date: "2024-01-05",
     readTime: "6 min",
     image: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800",
-    author: "Dra. Sofia Almeida"
+    author: "Dr. Sofia Almeida"
   }
 ];
 
 export const legalTemplates = {
   privacy: {
-    title: "Política de Privacidade",
-    lastUpdated: "Janeiro de 2024",
+    title: "Privacy Policy",
+    lastUpdated: "January 2024",
     sections: [
       {
-        title: "1. Informações que Coletamos",
-        content: "Coletamos apenas informações necessárias para o agendamento e comunicação: nome, email, telefone e informações fornecidas voluntariamente durante o processo de terapia."
+        title: "1. Information We Collect",
+        content: "We collect only information necessary for scheduling and communication: name, email, phone, and information voluntarily provided during the therapy process."
       },
       {
-        title: "2. Como Usamos suas Informações",
-        content: "Suas informações são utilizadas exclusivamente para: comunicação relacionada aos atendimentos, agendamento de sessões, e manutenção do histórico terapêutico conforme exigido pelo Conselho Federal de Psicologia."
+        title: "2. How We Use Your Information",
+        content: "Your information is used exclusively for: communication related to appointments, session scheduling, and maintaining therapeutic history as required by professional psychology standards."
       },
       {
-        title: "3. Proteção de Dados",
-        content: "Todos os dados são armazenados de forma segura e confidencial, seguindo as diretrizes da LGPD (Lei Geral de Proteção de Dados) e do Código de Ética do Psicólogo. Nunca compartilhamos suas informações com terceiros sem seu consentimento explícito."
+        title: "3. Data Protection",
+        content: "All data is stored securely and confidentially, following HIPAA guidelines and the Psychologist's Code of Ethics. We never share your information with third parties without your explicit consent."
       },
       {
-        title: "4. Seus Direitos",
-        content: "Você tem direito de acessar, corrigir ou solicitar a exclusão de seus dados pessoais a qualquer momento. Entre em contato conosco para exercer esses direitos."
+        title: "4. Your Rights",
+        content: "You have the right to access, correct, or request deletion of your personal data at any time. Contact us to exercise these rights."
       }
     ]
   },
   terms: {
-    title: "Termos de Serviço",
-    lastUpdated: "Janeiro de 2024",
+    title: "Terms of Service",
+    lastUpdated: "January 2024",
     sections: [
       {
-        title: "1. Sobre o Serviço",
-        content: "Este site oferece informações sobre serviços de psicologia clínica e permite o agendamento de consultas. O atendimento psicológico segue as normas do Conselho Federal de Psicologia."
+        title: "1. About the Service",
+        content: "This website provides information about clinical psychology services and allows for appointment scheduling. Psychological care follows professional psychology standards."
       },
       {
-        title: "2. Agendamento e Cancelamento",
-        content: "Sessões devem ser agendadas com antecedência. Cancelamentos devem ser comunicados com pelo menos 24 horas de antecedência. Faltas sem aviso prévio serão cobradas."
+        title: "2. Scheduling and Cancellation",
+        content: "Sessions must be scheduled in advance. Cancellations must be communicated at least 24 hours in advance. No-shows without prior notice will be charged."
       },
       {
-        title: "3. Confidencialidade",
-        content: "Todas as sessões são confidenciais conforme o Código de Ética do Psicólogo. Informações só serão compartilhadas mediante autorização expressa ou em casos previstos em lei."
+        title: "3. Confidentiality",
+        content: "All sessions are confidential according to the Psychologist's Code of Ethics. Information will only be shared with express authorization or in cases provided by law."
       },
       {
-        title: "4. Pagamento",
-        content: "O pagamento das sessões deve ser realizado no momento do atendimento ou conforme acordado previamente. Aceitamos diversas formas de pagamento."
+        title: "4. Payment",
+        content: "Payment for sessions must be made at the time of service or as previously agreed. We accept various forms of payment."
       }
     ]
   },
   disclaimer: {
-    title: "Aviso Legal",
-    lastUpdated: "Janeiro de 2024",
+    title: "Disclaimer",
+    lastUpdated: "January 2024",
     sections: [
       {
-        title: "Natureza do Serviço",
-        content: "Os serviços oferecidos são de psicologia clínica e não substituem tratamento médico psiquiátrico quando necessário. Em casos de emergência, procure atendimento médico imediato."
+        title: "Nature of Service",
+        content: "The services offered are clinical psychology services and do not replace psychiatric medical treatment when necessary. In case of emergency, seek immediate medical care."
       },
       {
-        title: "Resultados",
-        content: "Os resultados da terapia variam de pessoa para pessoa e dependem de diversos fatores, incluindo comprometimento com o processo terapêutico. Não há garantia de resultados específicos."
+        title: "Results",
+        content: "Therapy results vary from person to person and depend on various factors, including commitment to the therapeutic process. There is no guarantee of specific results."
       },
       {
-        title: "Conteúdo do Site",
-        content: "As informações neste site são apenas para fins educacionais e não substituem consulta profissional individualizada."
+        title: "Website Content",
+        content: "Information on this website is for educational purposes only and does not replace individualized professional consultation."
       },
       {
-        title: "Links Externos",
-        content: "Este site pode conter links para sites externos. Não nos responsabilizamos pelo conteúdo ou práticas de privacidade de sites de terceiros."
+        title: "External Links",
+        content: "This website may contain links to external sites. We are not responsible for the content or privacy practices of third-party sites."
       }
     ]
   }
