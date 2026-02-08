@@ -218,8 +218,8 @@ export const BlogPostPage = () => {
       <PremiumHeader />
       <div className="pt-32 pb-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <h1 className="font-serif text-5xl font-bold text-gray-800 mb-8">Post do Blog</h1>
-          <p className="text-xl text-gray-600">Conteúdo do artigo será exibido aqui...</p>
+          <h1 className="font-serif text-5xl font-bold text-gray-800 mb-8">Blog Post</h1>
+          <p className="text-xl text-gray-600">Article content will be displayed here...</p>
         </div>
       </div>
       <PremiumFooter />
@@ -233,24 +233,24 @@ export const ContactPage = () => {
       <PremiumHeader />
       <div className="pt-32 pb-20 px-4 bg-gradient-to-br from-rose-50 to-purple-50">
         <div className="max-w-7xl mx-auto">
-          <h1 className="font-serif text-5xl font-bold text-gray-800 mb-8 text-center">Contato</h1>
+          <h1 className="font-serif text-5xl font-bold text-gray-800 mb-8 text-center">Contact</h1>
           <div className="grid lg:grid-cols-2 gap-12">
             <div className="bg-white rounded-3xl p-8 shadow-soft">
-              <h3 className="font-serif text-2xl font-bold text-gray-800 mb-6">Informações</h3>
+              <h3 className="font-serif text-2xl font-bold text-gray-800 mb-6">Information</h3>
               <div className="space-y-4">
-                <p><strong>Telefone:</strong> {psychologistData.phone}</p>
+                <p><strong>Phone:</strong> {psychologistData.phone}</p>
                 <p><strong>Email:</strong> {psychologistData.email}</p>
                 <p><strong>WhatsApp:</strong> {psychologistData.whatsapp}</p>
-                <p><strong>Localização:</strong> {psychologistData.address}</p>
+                <p><strong>Location:</strong> {psychologistData.address}</p>
               </div>
             </div>
             <div className="bg-white rounded-3xl p-8 shadow-soft">
-              <h3 className="font-serif text-2xl font-bold text-gray-800 mb-6">Agendar Consulta</h3>
-              <p className="text-gray-600 mb-6">Utilize o Calendly para agendar sua sessão de forma rápida e segura:</p>
+              <h3 className="font-serif text-2xl font-bold text-gray-800 mb-6">Book Appointment</h3>
+              <p className="text-gray-600 mb-6">Use Calendly to schedule your session quickly and securely:</p>
               <div className="bg-gradient-to-br from-rose-50 to-purple-50 rounded-2xl p-8 text-center">
-                <p className="text-gray-600 mb-4">📅 Integração Calendly</p>
-                <p className="text-sm text-gray-500">Link: calendly.com/dra-sofia-almeida</p>
-                <p className="text-xs text-gray-400 mt-4">Widget será integrado aqui</p>
+                <p className="text-gray-600 mb-4">📅 Calendly Integration</p>
+                <p className="text-sm text-gray-500">Link: calendly.com/dr-sofia-almeida</p>
+                <p className="text-xs text-gray-400 mt-4">Widget will be integrated here</p>
               </div>
             </div>
           </div>

@@ -64,12 +64,12 @@ export const BlogPageLive = () => {
         <div className="max-w-7xl mx-auto">
           <h1 className="font-serif text-5xl font-bold text-gray-800 mb-8 text-center">Blog</h1>
           <p className="text-xl text-gray-600 text-center mb-16">
-            Artigos sobre saúde mental e bem-estar
+            Articles about mental health and wellness
           </p>
 
           {posts.length === 0 ? (
             <div className="text-center">
-              <p className="text-gray-600">Nenhum post publicado ainda.</p>
+              <p className="text-gray-600">No posts published yet.</p>
             </div>
           ) : (
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -93,8 +93,8 @@ export const BlogPageLive = () => {
                     </h3>
                     <p className="text-gray-600 mb-4 line-clamp-2">{post.excerpt}</p>
                     <div className="flex items-center justify-between text-sm text-gray-500">
-                      <span>{new Date(post.date).toLocaleDateString('pt-BR')}</span>
-                      <span>{post.readTime} de leitura</span>
+                      <span>{new Date(post.date).toLocaleDateString('en-US')}</span>
+                      <span>{post.readTime} read</span>
                     </div>
                   </div>
                 </Link>
