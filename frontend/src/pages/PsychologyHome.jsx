@@ -24,11 +24,11 @@ export const PsychologyHome = () => {
             <div className="space-y-8 animate-fade-in-up">
               <div className="inline-block">
                 <span className="px-4 py-2 rounded-full bg-white shadow-soft text-rose-500 text-sm font-medium">
-                  ✨ Bem-vindo ao seu espaço de cuidado
+                  ✨ Welcome to your care space
                 </span>
               </div>
               <h1 className="font-serif text-5xl lg:text-6xl font-bold text-gray-800 leading-tight">
-                Sua jornada de <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-400 to-purple-400">autoconhecimento</span> começa aqui
+                Your journey of <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-400 to-purple-400">self-discovery</span> starts here
               </h1>
               <p className="text-xl text-gray-600 leading-relaxed">
                 {psychologistData.tagline}
@@ -48,7 +48,7 @@ export const PsychologyHome = () => {
                   onClick={() => navigate('/sobre')}
                   className="rounded-full px-8 py-6 text-lg border-2 border-rose-200 hover:bg-rose-50"
                 >
-                  Conhecer a Psicóloga
+                  Meet the Psychologist
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </div>
@@ -57,7 +57,7 @@ export const PsychologyHome = () => {
               <div className="relative z-10 rounded-3xl overflow-hidden shadow-soft-lg">
                 <img 
                   src="https://images.unsplash.com/photo-1573497491208-6b1acb260507?w=800" 
-                  alt="Terapia acolhedora"
+                  alt="Welcoming therapy"
                   className="w-full h-[500px] object-cover"
                 />
               </div>
@@ -73,10 +73,10 @@ export const PsychologyHome = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="font-serif text-4xl font-bold text-gray-800 mb-4">
-              Como posso te ajudar?
+              How can I help you?
             </h2>
             <p className="text-xl text-gray-600">
-              Trabalho com abordagens baseadas em evidências para diversos desafios emocionais
+              I work with evidence-based approaches for various emotional challenges
             </p>
           </div>
           
@@ -129,10 +129,10 @@ export const PsychologyHome = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="font-serif text-4xl font-bold text-gray-800 mb-4">
-              Serviços Oferecidos
+              Services Offered
             </h2>
             <p className="text-xl text-gray-600">
-              Atendimento personalizado para suas necessidades
+              Personalized care for your needs
             </p>
           </div>
 
@@ -218,7 +218,7 @@ export const PsychologyHome = () => {
                       className="text-rose-500 hover:text-rose-600 p-0"
                       onClick={() => navigate('/servicos')}
                     >
-                      Saiba mais <ArrowRight className="ml-2 h-4 w-4" />
+                      Learn more <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
                   </div>
                 </div>
@@ -233,7 +233,7 @@ export const PsychologyHome = () => {
               onClick={() => navigate('/servicos')}
               className="rounded-full px-8 border-2 border-rose-200 hover:bg-rose-50"
             >
-              Ver Todos os Serviços
+              View All Services
             </Button>
           </div>
         </div>
@@ -244,10 +244,10 @@ export const PsychologyHome = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="font-serif text-4xl font-bold text-gray-800 mb-4">
-              Histórias de Transformação
+              Transformation Stories
             </h2>
             <p className="text-xl text-gray-600">
-              O que dizem as pessoas que confiam no meu trabalho
+              What people who trust my work say
             </p>
           </div>
 
