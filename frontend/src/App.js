@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { PsychologyHome } from './pages/PsychologyHome';
 import { AboutPage } from './pages/AboutPage';
 import { ServicesPage } from './pages/ServicesPage';
-import { BlogPage } from './pages/BlogPage';
+import { BlogPageLive } from './pages/BlogPageLive';
 import { BlogPostPage } from './pages/BlogPostPage';
 import { ContactPage } from './pages/ContactPage';
 import { PrivacyPage } from './pages/PrivacyPage';
@@ -19,7 +19,7 @@ function App() {
         <Route path="/" element={<PsychologyHome />} />
         <Route path="/sobre" element={<AboutPage />} />
         <Route path="/servicos" element={<ServicesPage />} />
-        <Route path="/blog" element={<BlogPage />} />
+        <Route path="/blog" element={<BlogPageLive />} />
         <Route path="/blog/:slug" element={<BlogPostPage />} />
         <Route path="/contato" element={<ContactPage />} />
         <Route path="/privacidade" element={<PrivacyPage />} />
