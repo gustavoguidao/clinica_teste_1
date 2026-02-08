@@ -19,7 +19,7 @@ export const Header = ({ clinicName, onNavigate }) => {
           </div>
           
           <nav className="hidden md:flex space-x-8">
-            {['Início', 'Sobre', 'Serviços', 'Depoimentos', 'Contato'].map((item) => (
+            {['Home', 'About', 'Services', 'Testimonials', 'Contact'].map((item) => (
               <button
                 key={item}
                 onClick={() => handleNav(item.toLowerCase())}
@@ -40,7 +40,7 @@ export const Header = ({ clinicName, onNavigate }) => {
 
         {mobileMenuOpen && (
           <nav className="md:hidden py-4 space-y-2">
-            {['Início', 'Sobre', 'Serviços', 'Depoimentos', 'Contato'].map((item) => (
+            {['Home', 'About', 'Services', 'Testimonials', 'Contact'].map((item) => (
               <button
                 key={item}
                 onClick={() => handleNav(item.toLowerCase())}

@@ -16,7 +16,7 @@ export const Contact = ({ clinicInfo }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    toast.success('Mensagem enviada com sucesso! Entraremos em contato em breve.');
+    toast.success('Message sent successfully! We will contact you soon.');
     setFormData({ name: '', email: '', phone: '', message: '' });
   };
 
@@ -25,14 +25,14 @@ export const Contact = ({ clinicInfo }) => {
   };
 
   return (
-    <section id="contato" className="py-20 bg-white">
+    <section id="contact" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-            Entre em Contato
+            Get In Touch
           </h2>
           <p className="text-lg text-gray-600">
-            Estamos prontos para atender você
+            We are ready to serve you
           </p>
         </div>
 
@@ -43,7 +43,7 @@ export const Contact = ({ clinicInfo }) => {
                 <div className="flex items-start space-x-4">
                   <Phone className="h-6 w-6 text-cyan-600 mt-1" />
                   <div>
-                    <h3 className="font-bold text-gray-900 mb-1">Telefone</h3>
+                    <h3 className="font-bold text-gray-900 mb-1">Phone</h3>
                     <p className="text-gray-600">{clinicInfo.phone}</p>
                   </div>
                 </div>
@@ -57,14 +57,14 @@ export const Contact = ({ clinicInfo }) => {
                 <div className="flex items-start space-x-4">
                   <MapPin className="h-6 w-6 text-cyan-600 mt-1" />
                   <div>
-                    <h3 className="font-bold text-gray-900 mb-1">Endereço</h3>
+                    <h3 className="font-bold text-gray-900 mb-1">Address</h3>
                     <p className="text-gray-600">{clinicInfo.address}</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
                   <Clock className="h-6 w-6 text-cyan-600 mt-1" />
                   <div>
-                    <h3 className="font-bold text-gray-900 mb-1">Horário</h3>
+                    <h3 className="font-bold text-gray-900 mb-1">Hours</h3>
                     <p className="text-gray-600">{clinicInfo.hours}</p>
                   </div>
                 </div>
@@ -77,14 +77,14 @@ export const Contact = ({ clinicInfo }) => {
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Nome
+                    Name
                   </label>
                   <Input 
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    placeholder="Seu nome completo"
+                    placeholder="Your full name"
                   />
                 </div>
                 <div>
@@ -97,12 +97,12 @@ export const Contact = ({ clinicInfo }) => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    placeholder="seu@email.com"
+                    placeholder="your@email.com"
                   />
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Telefone
+                    Phone
                   </label>
                   <Input 
                     type="tel"
@@ -110,12 +110,12 @@ export const Contact = ({ clinicInfo }) => {
                     value={formData.phone}
                     onChange={handleChange}
                     required
-                    placeholder="(11) 98765-4321"
+                    placeholder="+1 (555) 123-4567"
                   />
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Mensagem
+                    Message
                   </label>
                   <Textarea 
                     name="message"
@@ -123,11 +123,11 @@ export const Contact = ({ clinicInfo }) => {
                     onChange={handleChange}
                     required
                     rows={4}
-                    placeholder="Como podemos ajudar você?"
+                    placeholder="How can we help you?"
                   />
                 </div>
                 <Button type="submit" className="w-full bg-cyan-600 hover:bg-cyan-700">
-                  Enviar Mensagem
+                  Send Message
                 </Button>
               </form>
             </CardContent>

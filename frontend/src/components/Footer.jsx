@@ -14,9 +14,9 @@ export const Footer = ({ clinicData, onNavigate }) => {
             <p className="text-gray-400">{clinicData.tagline}</p>
           </div>
           <div>
-            <h3 className="font-bold text-lg mb-4">Links Rápidos</h3>
+            <h3 className="font-bold text-lg mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              {['Início', 'Sobre', 'Serviços', 'Depoimentos', 'Contato'].map((item) => (
+              {['Home', 'About', 'Services', 'Testimonials', 'Contact'].map((item) => (
                 <li key={item}>
                   <button 
                     onClick={() => onNavigate(item.toLowerCase())}
@@ -29,7 +29,7 @@ export const Footer = ({ clinicData, onNavigate }) => {
             </ul>
           </div>
           <div>
-            <h3 className="font-bold text-lg mb-4">Contato</h3>
+            <h3 className="font-bold text-lg mb-4">Contact</h3>
             <ul className="space-y-2 text-gray-400">
               <li>{clinicData.phone}</li>
               <li>{clinicData.email}</li>
@@ -38,7 +38,7 @@ export const Footer = ({ clinicData, onNavigate }) => {
           </div>
         </div>
         <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
-          <p>&copy; 2024 {clinicData.name}. Todos os direitos reservados.</p>
+          <p>&copy; 2024 {clinicData.name}. All rights reserved.</p>
         </div>
       </div>
     </footer>
